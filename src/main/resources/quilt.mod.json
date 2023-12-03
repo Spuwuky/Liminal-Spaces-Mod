@@ -1,0 +1,40 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"group": "git.spuwuky",
+		"id": "liminal_spaces",
+		"version": "${version}",
+		"metadata": {
+			"name": "Liminal Spaces Mod",
+			"description": "This mod adds a few liminal spaces to mineraft",
+			"contributors": {
+				"Spuwuky": "Owner"
+			},
+			"contact": {
+				"homepage": "https://github.com/Spuwuky/Liminal-Spaces-Mod/tree/1.20.1",
+				"issues": "https://github.com/Spuwuky/Liminal-Spaces-Mod/issues",
+				"sources": "https://github.com/Spuwuky/Liminal-Spaces-Mod/tree/1.20.1"
+			},
+			"icon": "assets/liminal_spaces/icon.png"
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"entrypoints": {
+			"init": "git.spuwuky.liminal_spaces.LiminalSpaces"
+		},
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.19.1"
+			},
+			{
+				"id": "quilted_fabric_api",
+				"versions": ">=7.0.2"
+			},
+			{
+				"id": "minecraft",
+				"versions": ">=1.20"
+			}
+		]
+	},
+	"mixin": "liminal_spaces.mixins.json"
+}
